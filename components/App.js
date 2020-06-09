@@ -1,30 +1,15 @@
 import React, { Component } from 'react';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import HomeScreen from './HomeScreen'
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-  TouchableHighlight,
-  NativeAppEventEmitter,
-  NativeEventEmitter,
-  NativeModules,
-  Platform,
-  PermissionsAndroid,
-  ScrollView,
-  AppState,
-  FlatList,
-  Dimensions,
-  Button
-} from 'react-native';
+import Card_gallery from './Card_gallery'
+import Full_Image from './Full_Image'
 
 
 
 
 const MainNavigator = createStackNavigator({
-  Home: {screen: HomeScreen},
+  Card_gallery: {screen: Card_gallery},
+  Full_Image:{screen: Full_Image}
 });
 
 const App = createAppContainer(MainNavigator);
